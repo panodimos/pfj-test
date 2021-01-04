@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="pfj-testFlow" doc:id="6f59df92-3de4-41e3-a6fa-45a2d1b28331" >
 		<http:listener doc:name="Listener" doc:id="4a23392d-5bd7-40ad-88c0-429dc193e0b8" config-ref="HTTP_Listener_config" path="/"/>
 		<logger level="INFO" doc:name="Logger" doc:id="6398ceda-624c-4afd-ac55-f04af4be498b" message="START TRANSACTION"/>
-		<set-payload value='#["SUCCESSFUL TRANSACTION - 21"]' doc:name="Set Payload" doc:id="777a2c3c-ba7d-40de-b25c-bdcddf05567b" />
+		<set-payload value='#["SUCCESSFUL TRANSACTION - 2021"]' doc:name="Set Payload" doc:id="777a2c3c-ba7d-40de-b25c-bdcddf05567b" />
 		<logger level="INFO" doc:name="Logger" doc:id="17b0db04-17c4-46eb-9c4c-f8f4fba5c90b" message="ENDED TRANSACTION"/>
 	</flow>
 </mule>
